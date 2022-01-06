@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
+import FnUseStatehook from './Components/FnUseStatehook';
+import FnUseStateWithArray from './Components/FnUseStateWithArray';
+import FnUseStateWithObj from './Components/FnUseStateWithObj';
+import FnUseStateWithPrev from './Components/FnUseStateWithPrev';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FnUseStatehook />
+      <FnUseStateWithPrev />
+      <FnUseStateWithObj />
+      <FnUseStateWithArray />
     </div>
   );
 }
